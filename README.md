@@ -19,7 +19,7 @@ Calibration is important.  Without calibration you'll be disappointed in the acc
 # Remarks
 * Tilt-compensated compass with a simple graphical interface
 * Provides hard and soft iron calibration and correction (compensation) with storage of calibration data in the CLUE's non-volatile memory.  
-* Makes use of the CLUE's on-board accelerometer and magnetometer.  The implementation doesn't currently provide full **sensor fusion**.  In particular we don't use any filters (Kalman or otherwise) or make use the gyroscopes. 
+* Makes use of the CLUE's on-board accelerometer and magnetometer.  The implementation doesn't currently provide full **sensor fusion**.  In particular we don't use any filters (Kalman or otherwise) or make use of the gyroscopes. 
 * I've also tested the code with breakout IMUs connected over i2C STEMMA, such as the FXOS8700, ICM209248, and BNO085.  Those work fine but require minor adaptations to import additional libraries and deal with different axis orientations on those PCBs and chips.  
 * At some point I'll likely switch the tilt-compensation computation from the current 3-vector form to quaternions.  
 * Currently does not support explicit magnetic declination adjustments
