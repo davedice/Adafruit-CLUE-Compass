@@ -23,3 +23,5 @@ Calibration is important.  Without calibration you'll be disappointed in the acc
 * I've also tested the code with breakout IMUs connected over i2C STEMMA, such as the FXOS8700, ICM209248, and BNO085.  Those work fine but require minor adaptations to import additional libraries and deal with different axis orientations on those PCBs and chips.  
 * At some point I'll likely switch the tilt-compensation computation from the current 3-vector form to quaternions.  
 * Currently does not support explicit magnetic declination adjustments
+* There's some lag in response in the interface.  I've narrowed this down to GUI issues and will look into the issue further.  At worst, I'll port to Arduino C/C++ if necessary, although I think the root problem is bandwidth to the SPI ST7789 LCD.  
+
